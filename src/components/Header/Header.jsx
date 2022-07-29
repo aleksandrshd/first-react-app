@@ -1,0 +1,13 @@
+import HeaderCss from './Header.module.css';
+
+const Header = () => {
+  return (
+    <header className={HeaderCss.header}>
+      <img
+        src='https://yandex-images.clstorage.net/5cS6c1t33/92788fnSEh1/p_O1t68U6hgwcoyLJ92VLqENdCPNEoaBbJ-gJIlNNjzyXOHJUTd0N8S7axuR_NhBVibXUqEDgyPqDIEjII-eJbIjZrFohyiYcHJPyWEf1OxjDrYiyBNGF3lZdnIYGzZs4181EstrPCoeMCfQmLcTUwIkwkbyERKmcIICc3RbRPEn9_C1oUWr0b8qT06mVxok-Qv9opaWm8VoxPv70Mf94qpI4FEOIfJhl_5r2dR0FZ7IZgVONYTUq_rJHHL4kIC0LzO3eC4OLRTw7QEBYl1Y7LTFe-rQ1dBAoMg1utkHtGBpASoQAuZ0oVi2YVbaOZJXjyaCxPoDkGh1jJOyMZDJeeSzebjoTukUfWoLBepaEunwjnkmk11fRifDMrAaD_yqo4Os2QqncWzStmDW0vjcUQKvjwzwCRfhNU9bM7xSzLBrd3k6I4rgE3Wlg04oFR8js4i5rl8S285vTX21HMy5oSPBIp5AYHfrlTdjERvwWlsCK4bDuYaW4fSLVzo4Gkk-JrY7tWHM6ltx5wMCrJ4VYrhAvSSbEFIFaM799NXH9K9iDmCQQKm9IFy_ZtmcdJKYyyoAhDBO22dxxZm3_lsL-ms6Nj6tw6AZsimPwmJVEOt3QnAin1gYBa0E_PQWxvloYgVv2ECi9ygUfWOc13QVVk5jQUk0SFUvvYyXunHQznshN3Q2KgOjkXagwUKmHZchOgX0oxtSWY6uzHZ7GoA3aaXMolNHZ3Sn2XAm2xs5XR_EYkOJ-c7Yp34FXvN5nco2qb83diaEbRD9qwhPqVgWZDAFvOjfUxuKLI0_tVIBdOalAaMeyeF1YRz7rhMbuZxQAWsBRDcGVeE8DVF395bNuyU0sPfuDGnbuajEj21WWi15TL_rllPTyS-Nur2fB_zjKcikHEbvcGAZcy7bm3QZ0EfpQsYyC9wgdogb-70WxbljPDN-qU5ikbwgwoDvXF2rO0dz71fQkwggDnJ4XE'
+        alt='Логотип'/>
+    </header>
+  )
+}
+
+export default Header;

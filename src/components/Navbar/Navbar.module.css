@@ -1,0 +1,17 @@
+.nav {
+    background-color: #19acac;
+    grid-area: nav;
+    border-radius: 5px;
+}
+
+.list {
+    list-style: none;
+}
+
+.item {
+    color: white;
+}
+
+.item.active {
+    font-weight: bold;
+}
