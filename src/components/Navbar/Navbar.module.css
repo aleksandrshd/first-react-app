@@ -1,17 +1,19 @@
 .nav {
-    background-color: #19acac;
-    grid-area: nav;
-    border-radius: 5px;
+  background-color: #19acac;
+  grid-area: nav;
+  border-radius: 5px;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
-.item {
-    color: white;
+.item a {
+  color: white;
+  text-decoration: none;
 }
 
-.item.active {
-    font-weight: bold;
+.item a.active {
+  font-weight: bold;
+  font-size: 30px;
 }

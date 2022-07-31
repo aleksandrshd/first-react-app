@@ -1,0 +1,31 @@
+.messages {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsList {
+  list-style: none;
+  padding: 10px;
+}
+
+.dialog {
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.dialog.active {
+  font-weight: bold;
+}
+
+.messagesList {
+  list-style: none;
+  padding: 10px;
+}
+
+.message {
+  margin: 0;
+  padding: 5px;
+}
