@@ -18,28 +18,11 @@ const Message = (props) => {
   )
 }
 
-const Messages = () => {
+const Messages = ({state}) => {
 
-  const dialogs = [
-    {id: 1, name: 'Aleksandr'},
-    {id: 2, name: 'Dmitry'},
-    {id: 3, name: 'Aleksey'},
-    {id: 4, name: 'Olga'},
-    {id: 5, name: 'Maksim'},
-    {id: 6, name: 'Margarita'}
-  ];
+  const dialogsElements = state.dialogs.map((dialog,index) => <Dialog id={dialog.id} name={dialog.name} key={index}/>);
 
-  const messages = [
-    {id: 1, message: 'Hi'},
-    {id: 2, message: 'What are yo doing?'},
-    {id: 3, message: 'How is your project???'},
-    {id: 4, message: 'Not sure'},
-    {id: 5, message: 'Great idea lol'},
-  ];
-
-  const dialogsElements = dialogs.map(dialog => <Dialog id={dialog.id} name={dialog.name}/>);
-
-  const messagesElements = messages.map(messageItem => <Message message={messageItem.message}/>)
+  const messagesElements = state.messages.map((messageItem, index) => <Message message={messageItem.message} key={index}/>)
 
   return (
     <div className={MessagesCss.messages}>
