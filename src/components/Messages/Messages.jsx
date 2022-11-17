@@ -1,6 +1,5 @@
 import MessagesCss from './Messages.module.css';
 import {NavLink} from "react-router-dom";
-import {addMessageActionCreator, addNewMessageTextActionCreator} from "../../redux/messagesPageReducer";
 
 const Dialog = (props) => {
   const path = '/dialogs/' + props.id;
@@ -19,15 +18,15 @@ const Message = (props) => {
   )
 }
 
-const Messages = ({state, dispatch}) => {
+const Messages = ({state, newMessageText, changeMessageText, sendMessage}) => {
 
-  const onClick = () => {
-    dispatch(addMessageActionCreator());
+  const onSendMessageBtnClick = () => {
+    sendMessage();
   }
 
-  const onChange = (event) => {
+  const onMessageTextChange = (event) => {
     const text = event.target.value;
-    dispatch(addNewMessageTextActionCreator(text));
+    changeMessageText(text);
   }
 
   const dialogsElements = state.dialogs.map((dialog, index) => <Dialog id={dialog.id} name={dialog.name} key={index}/>);
@@ -43,8 +42,8 @@ const Messages = ({state, dispatch}) => {
       <div className={MessagesCss.messagesList}>
         {messagesElements}
         <div>
-          <textarea onChange={onChange} value={state.newMessageText}/>
-          <button onClick={onClick}>Отправить</button>
+          <textarea onChange={onMessageTextChange} value={newMessageText}/>
+          <button onClick={onSendMessageBtnClick}>Отправить</button>
         </div>
       </div>
     </div>
